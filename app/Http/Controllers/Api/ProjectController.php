@@ -13,4 +13,10 @@ class ProjectController extends Controller
 
     return response()->json($projects);
   }
+
+  public function getImage() {
+    $url = 'http://' . $_SERVER['HTTP_HOST'] . '/storage/';
+
+    return response()->json($url);
+  }
 }
