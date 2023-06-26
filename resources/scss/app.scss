@@ -1,0 +1,52 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  /* GENERAL */
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  /* /GENERAL */
+
+  .ms-wrapper {
+    height: 100vh;
+    background: lightgray;
+    /* NAV */
+      header {
+        height: 4rem;
+      }
+     /* ASIDE */
+      aside {
+        float: left;
+        height: calc(100% - 4rem);
+        width: 15%;
+      }
+    /* MAIN */
+      main {
+        height: calc(100% - 4rem);
+        width: auto;
+        overflow: auto;
+
+        .ms-project-card-body {
+          .ms-tag {
+            font-weight: bold;
+          }
+
+          .ms-info {
+            color: blue;
+          }
+
+          .ms-badge-pointer {
+            cursor: default;
+          }
+        }
+      }
+
+      .ck-editor__editable_inline {
+        min-height: 250px;
+      }
+
+
+  }
+}
